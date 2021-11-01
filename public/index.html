@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>VUE.js</title>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body style="background-image: url(background.jpg);">
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#"><h1 class="w3-xxxlarge">Logo</h1></a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button" onclick="document.getElementById('contactt').style.display='none',document.getElementById('home').style.display='block'">My Day</a>
+  <a class="w3-bar-item w3-button">Important</a>
+  <a class="w3-bar-item w3-button" onclick="document.getElementById('home').style.display='none',document.getElementById('contactt').style.display='block'">Contact</a>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="home">
+  <div class="w3-container w3-grey w3-opacity-min" style="height:125px;">
+    <h1 class="w3-xxxlarge ">My Day</h1>
+  </div>
+  <div id="app" style="padding:32px;" >
+  </div> 
+</div>
+<div id="contactt" hidden>
+  <div class="w3-container w3-grey w3-opacity-min" style="height:125px;">
+    <h1 class="w3-xxxlarge ">Contact</h1>
+  </div>
+  <div id="contact" style="padding:32px;">
+  </div> 
+</div>
+
+
+
+</div>
+</body>
+</html> 
+
